@@ -1,3 +1,5 @@
+
+
 *{
     margin: 0;
     padding: 0;
@@ -172,19 +174,15 @@ h1{
 }
 
 
-.blocks-container{
-    width: 100vw;
-}
-
 .blocks{
     background-color: green;
     width: calc(100vw / 3);
-    height: 640px;
+    height: calc(100vw / 3);
 }
 
 .content-block{
-    width: 320px;
-    height: 320px;
+    width: 50%;
+    height: 50%;
     background-color: rgb(114, 150, 182);
 }
 
