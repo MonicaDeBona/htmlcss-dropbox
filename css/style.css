@@ -106,3 +106,41 @@ h1{
     height: 30%;
     border: 1px solid black;
 }
+
+.office-contact{
+    height: 10rem;
+    margin-top: 2rem;
+}
+
+.team{
+    background-color: bisque;
+    height: 30%;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.enterprise{
+    background-color: bisque;
+    height: 70%;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.partner-container{
+    margin-top: 2rem;
+}
+
+.partner-img{
+    background-color: bisque;
+    border: 1px solid black;
+    width: 50%;
+    height: 30rem;
+}
+
+.partner{
+    background-color: bisque;
+    border: 1px solid black;
+    width: 50%;
+    height: 30rem;
+}
+
