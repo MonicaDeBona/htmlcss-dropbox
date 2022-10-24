@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+.vp{
+    width: 100vw;
+    height: 100vh;
+}
+
 .flex{
     display: flex;
 }
@@ -25,7 +30,37 @@ nav{
 }
 
 .right-list{
-    background-color: rgb(176, 112, 236);
+    background-color: #b070ec;
     height: 40px;
     width: 500px;
+}
+
+header{
+    background-color: rgb(245, 245, 189);
+    height: calc(100vh - 80px);
+}
+
+.major-container{
+    background-color: #b4d0e6;
+    width: 75rem;
+    margin: auto;
+}
+
+h1{
+    font-size: 5rem;
+}
+
+
+.trial{
+    background-color: #b070ec;
+    width: 50%;
+    height: 35rem;
+    border: 1px solid black;
+}
+
+.trial-img{
+    background-color: #b070ec;
+    width: 50%;
+    height: 35rem;
+    border: 1px solid black;
 }
