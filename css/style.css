@@ -13,8 +13,11 @@
     display: flex;
 }
 
-.space-centered{
+.space-between{
     justify-content: space-between;
+}
+
+.center{
     align-items: center;
 }
 
@@ -63,4 +66,21 @@ h1{
     width: 50%;
     height: 35rem;
     border: 1px solid black;
+}
+
+.medium-container{
+    background-color: aquamarine;
+    margin: auto;
+    width: 63rem;
+}
+
+.subscription{
+    background-color: rgb(63, 60, 60);
+    width: 100%;
+}
+
+.plans{
+    background-color: rgb(110, 218, 110);
+    width: 15rem;
+    height: 50rem;
 }
