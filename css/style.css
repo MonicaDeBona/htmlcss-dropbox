@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-.vp{
-    width: 100vw;
-    height: 100vh;
-}
-
 .flex{
     display: flex;
 }
@@ -40,7 +35,6 @@ nav{
 
 header{
     background-color: rgb(245, 245, 189);
-    height: calc(100vh - 80px);
 }
 
 .major-container{
@@ -109,6 +103,7 @@ h1{
 
 .office-contact{
     height: 10rem;
+    width: 100%;
     margin-top: 2rem;
 }
 
@@ -128,6 +123,7 @@ h1{
 
 .partner-container{
     margin-top: 2rem;
+    width: 100%;
 }
 
 .partner-img{
@@ -144,3 +140,63 @@ h1{
     height: 30rem;
 }
 
+.operations-container{
+    width: 100%;
+    height: 50rem;
+}
+
+.cards{
+    background-color: #b070ec;
+    border: 1px solid black;
+    height: 20rem;
+    width: 18rem;
+    
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.card-img{
+    background-color: bisque;
+    width: 100%;
+    height: 50%;
+    border: 1px solid black;
+}
+
+.card-content{
+    background-color: bisque;
+    width: 100%;
+    height: 50%;
+    border: 1px solid black;
+}
+
+
+.blocks-container{
+    width: 100vw;
+}
+
+.blocks{
+    background-color: green;
+    width: calc(100vw / 3);
+    height: 640px;
+}
+
+.content-block{
+    width: 320px;
+    height: 320px;
+    background-color: rgb(114, 150, 182);
+}
+
+.business{
+    background-color: greenyellow;
+    height: 10rem;
+}
+.asking-questions{
+    height: 10rem;
+    background-color: rgb(61, 150, 73);
+}
+
+footer{
+    background-color: rgb(75, 71, 71);
+}
