@@ -176,8 +176,8 @@ h1{
 
 .blocks{
     background-color: green;
+    aspect-ratio: 1 / 1;
     width: calc(100vw / 3);
-    height: calc(100vw / 3);
 }
 
 .content-block{
