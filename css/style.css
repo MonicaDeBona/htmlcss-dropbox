@@ -51,14 +51,13 @@ nav{
 
 .left-list{
     background-color: rgb(176, 112, 236);  
-    height: 40px;
-    width: 500px;
+    width: 550px;
 }
 
 .right-list{
     background-color: #b070ec;
     height: 40px;
-    width: 500px;
+    width: 550px;
 }
 
 
@@ -246,4 +245,29 @@ h1{
 /* ////////////-----Sezione FOOTER-----/////////////// */
 footer{
     background-color: rgb(75, 71, 71);
+}
+
+
+
+
+/* ////////////-----INSERIMENTO CONTENUTI-----/////////////// */
+
+
+/* ////////////-----sezione NAV CONTENUTI-----/////////////// */
+a{
+    text-decoration: none;
+}
+
+
+
+li{
+    list-style: none;
+}
+
+.main-logo{
+    height: 1.5rem;
+}
+
+.start{
+    background-color: rgb(8, 52, 133);
 }
