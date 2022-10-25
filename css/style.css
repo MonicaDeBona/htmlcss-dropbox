@@ -27,9 +27,6 @@ h3{
 
 
 
-
-
-
 /* ////////////-----SELETTORI GENERICI-----/////////////// */
 .flex{
     display: flex;
@@ -118,14 +115,10 @@ header{
 
 /* ////////////-----INIZIO MAIN-----/////////////// */
 
-
-
-
 /* ////////////-----Sezione con piani di abbonamento-----/////////////// */
 .subscription-title{
     margin-bottom: 2rem;
 }
-
 
 .subscription-office{
     height: 304px;
@@ -355,18 +348,22 @@ header button{
     padding-right: .5rem;
 }
 
-.plan-type span{
-    display: block;
-}
-
 .plan-block{
     padding-bottom: 3rem;
     line-height: 1.8rem;
     padding: 1.5rem 1.5rem;
 }
 
+.plan-block li{
+    position: relative;
+    padding-left: 1.5rem;
+}
+
 main ul li:before {
     content: '✓';
+    position: absolute;
+    top: 0;
+    left: 0;
     color: #0566f9;
     font-weight: bold;
 }
