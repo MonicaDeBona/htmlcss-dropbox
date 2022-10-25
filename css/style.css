@@ -242,6 +242,14 @@ header{
     background-color: rgb(114, 150, 182);
 }
 
+.numbers{
+    padding-bottom: 9rem;
+}
+
+.numbers p{
+    padding-top: 5rem;
+}
+
 
 
 /* ////////////-----DIV SOLITARIO A CUI BISOGNA TROVARE UN POSTO-----/////////////// */
