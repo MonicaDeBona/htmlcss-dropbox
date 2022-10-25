@@ -137,7 +137,7 @@ header{
 
 .plans{
     width: calc((100% / 3) - 2rem);
-    height: 850px;
+    height: 950px;
     border: .1px solid #474747;
 }
 
@@ -153,8 +153,7 @@ header{
 .empty-div{
     height: 1%;
     border-top: .1px solid #474747;
-    margin-left: 1rem;
-    margin-right: 15rem;
+    margin: 1rem 15rem 1rem 1rem;
 }
 
 .check-type{
@@ -190,18 +189,18 @@ header{
     width: 100%;
 }
 
+.partner-img-container{
+    width: 60%;
+}
+
 .partner-img{
-    background-color: bisque;
-    border: 1px solid black;
-    width: 50%;
-    height: 30rem;
+    width: 100%;
 }
 
 .partner{
-    background-color: bisque;
-    border: 1px solid black;
-    width: 50%;
-    height: 30rem;
+    width: 40%;
+    padding: 3rem 3rem;
+
 }
 
 
@@ -281,11 +280,20 @@ footer{
     background-color: #0566f9;
 }
 
+
+
 .button-style{
     color: white;
     border: none;
     padding: .5rem 1.7rem;
     font-size: 1.1rem;
+}
+
+.white-button{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    margin-top: 2rem;
 }
 
 .plan-button{
@@ -361,7 +369,10 @@ main ul li:before {
     font-weight: bold;
 }
 
-
+/* ////////////-----PARTNER CONTAINER sezione-----/////////////// */
+.partner h3{
+    padding-bottom: 2rem;
+}
 
 /* ////////////-----COLORI STILI E DIMENISIONI QUADRATI-----/////////////// */
 
