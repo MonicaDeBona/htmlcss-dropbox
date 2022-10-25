@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 /* RESET */
 *{
     margin: 0;
@@ -5,9 +7,12 @@
     box-sizing: border-box;
 }
 
-/* body{
-    max/min-width
-} */
+body{
+    font-family: 'Open Sans', sans-serif;
+    /* min/max-width */
+}
+
+
 
 
 
@@ -37,6 +42,14 @@
     justify-content: center;
 }
 
+.p-absolute{
+    position: absolute;
+}
+
+.p-relative{
+    position: relative;
+}
+
 .major-container{
     background-color: #b4d0e6;
     width: 75rem;
@@ -51,6 +64,8 @@
 
 
 
+
+
 /* ////////////-----NAV-----/////////////// */
 nav{
     height: 80px;
@@ -58,7 +73,7 @@ nav{
 }
 
 
-/* .left-list{  
+/* .left-list{
     è giusto togliere la width?
 } */
 
@@ -71,25 +86,24 @@ nav{
 
 /* ////////////-----HEADER-----/////////////// */
 header{
-    background-color: rgb(245, 245, 189);
+    background-color: #b4d0e6;
 }
 
 h1{
     font-size: 5rem;
+    padding-top: 4rem;
+}
+
+.col{
+    padding-top: 2.5rem;
 }
 
 .trial{
-    background-color: #b070ec;
-    width: 50%;
-    height: 35rem;
-    border: 1px solid black;
+    width: 30%;
 }
 
 .trial-img{
-    background-color: #b070ec;
-    width: 50%;
-    height: 35rem;
-    border: 1px solid black;
+    width: 70%;
 }
 
 
@@ -201,7 +215,7 @@ h1{
     border: 1px solid black;
     height: 20rem;
     width: 18rem;
-    
+
 }
 
 .card-img{
@@ -270,16 +284,23 @@ nav li a{
     color: #474747;
 }
 
-.start-button{
-    color: white;
-    background-color: #0566f9;
-    border: none;
-    padding: .3rem .8rem;
-}
-
 
 /* ////////////-----sezione HEADER CONTENUTI-----/////////////// */
 
+header button{
+    margin: 2rem 0rem;
+}
+
+.down-arrow{
+    font-size: 5rem;
+    margin-bottom: 3rem;
+}
+
+.client-proposal{
+    width: 55rem;
+    top: 0px;
+    left: 0px;
+}
 
 
 
@@ -329,6 +350,18 @@ nav li a{
 
 .img-size{
     width: 10rem;
-    
+
 }
 
+
+
+.blue{
+    background-color: #0566f9;
+}
+
+.button-style{
+    color: white;
+    border: none;
+    padding: .3rem .8rem;
+    font-size: 1.1rem;
+}
