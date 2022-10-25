@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Dropbox</title>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     </head>
     <body>
 
@@ -72,29 +73,187 @@
                 <!-- INIZIO SEZIONE CON PIANI DI ABBONAMENTO -->
                 <section class="subscription flex column">
                     <div class="subscription-title">
-                        <header>
-                            <h2>
-                                Trova il piano business che fa per te
-                            </h2>
-                        </header>
-                        <span>radio</span>
-                        <span>radio</span>
+                        <h2>
+                            Trova il piano business che fa per te
+                        </h2>
+                        <p>
+                            <input type="radio" id="Fatturazione-mensile" name="fatturazione" checked="yes">Fatturazione mensile
+                        </p>
+                        <p>
+                            <input type="radio" id="Fatturazione-annuale" name="fatturazione">Fatturazione annuale
+                        </p>
                     </div>
                     <div class="subscription-price flex space-between">
-                        <div class="plans flex column">
-                            <div class="plan-forwho"></div>
-                            <div class="plan-type"></div>
-                            <div class="check-type"></div>
+                        <div class="plans flex column space-between">
+                            <div class="plan-forwho flex center justify">
+                                <p>
+                                    <i class="fa-solid fa-user icons"></i>Singolo
+                                </p>
+                            </div>
+                            <div class="plan-type">
+                                <div class="plan-block">
+                                    <h3>Professional</h3>
+                                    <span>
+                                    <strong>
+                                        &euro;12.00
+                                    </strong>
+                                    </span>
+                                    <span class="gray-text">
+                                    /mese
+                                    </span>
+                                </div>
+                                <div class="plan-block">
+                                    <span>
+                                        <i class="fa-solid fa-user icons"></i>1 utente
+                                    </span>
+                                    <span>
+                                        <i class="fa-solid fa-folder icons"></i>5 TB di spazio di archiviazione sicuro
+                                    </span>
+                                    <span>
+                                        <i class="fa-solid fa-share-nodes icons"></i> Funzioni di produttività premium e condivisione file semplice e sicura
+                                    </span>
+                                </div>
+                                <div class="plan-block">
+                                    <a href="#"><button class="blue button-style plan-button">Prova Gratis per 30 giorni</button></a>
+                                    <span>
+                                    oppure <a href="#">acquista ora</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="empty-div"></div>
+                            <div class="check-type">
+                                <div class="plan-block">
+                                    <h5>
+                                        Punti Salienti del piano
+                                    </h5>
+                                    <ul>
+                                        <li>
+                                            Invia file fino a 100 GB con Dropbox transfert
+                                        </li>
+                                        <li>
+                                            Cartelle offline su dispositivi mobili
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                         <div class="plans flex column">
-                            <div class="plan-forwho"></div>
-                            <div class="plan-type"></div>
-                            <div class="check-type"></div>
+                            <div class="plan-forwho flex center justify">
+                                <p>
+                                    <i class="fa-solid fa-people-group icons"></i>Team
+                                </p>
+                            </div>
+                            <div class="plan-type">
+                                <div class="plan-block">
+                                    <h3>Advanced</h3>
+                                    <span>
+                                    <strong>
+                                        &euro;18.00
+                                    </strong>
+                                    </span>
+                                    <span class="gray-text">
+                                    /utente/mese
+                                    </span>
+                                </div>
+                                <div class="plan-block">
+                                    <span>
+                                        <i class="fa-solid fa-user icons"></i>3 o più utenti
+                                    </span>
+                                    <span>
+                                        <i class="fa-solid fa-folder icons"></i>Tutto lo spazio di cui ha bisogno il tuo team
+                                    </span>
+                                    <span>
+                                        <i class="fa-solid fa-share-nodes icons"></i> Sofisticate funzioni di controllo per tenere al sicuro tutti i file del tuo team
+                                    </span>
+                                </div>
+                                <div class="plan-block">
+                                    <a href="#"><button class="blue button-style plan-button">Prova Gratis per 30 giorni</button></a>
+                                    <span>
+                                    oppure <a href="#">acquista ora</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="empty-div"></div>
+                            <div class="check-type">
+                                <div class="plan-block">
+                                    <h5>
+                                        Punti Salienti del piano
+                                    </h5>
+                                    <ul>
+                                        <li>
+                                            Nessun limite di spazio per i file
+                                        </li>
+                                        <li>
+                                            Cartelle offline su dispositivi mobili
+                                        </li>
+                                        <li>
+                                            Risparmio del 50% rispetto alle iscrizioni singole
+                                        </li>
+                                        <li>
+                                            Possibilità di inserire nuovi membri del team
+                                        </li>
+                                        <li>
+                                            Gestione dei permessi in base ai ruoli
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                         <div class="plans flex column">
-                            <div class="plan-forwho"></div>
-                            <div class="plan-type"></div>
-                            <div class="check-type"></div>
+                            <div class="plan-forwho flex center justify">
+                                <p>
+                                    <i class="fa-solid fa-building icons"></i>Azienda
+                                </p>
+                            </div>
+                            <div class="plan-type">
+                                <div class="plan-block">
+                                    <h3>Enterprise</h3>
+                                    <span>
+                                    <strong>
+                                        Contattaci
+                                    </strong>
+                                    </span>
+                                    <span class="gray-text">
+                                    -
+                                    </span>
+                                </div>
+                                <div class="plan-block">
+                                    <span>
+                                        <i class="fa-solid fa-user icons"></i>10 o più utenti
+                                    </span>
+                                    <span>
+                                        <i class="fa-solid fa-folder icons"></i>Soluzioni personalizzabili per la tua azienda
+                                    </span>
+                                    <span>
+                                        <i class="fa-solid fa-share-nodes icons"></i> Assistenza personalizzata per aiutare gli amministratori in una gestione su larga scala
+                                    </span>
+                                </div>
+                                <div class="plan-block">
+                                    <a href="#"><button class="blue button-style plan-button">Prova Gratis per 30 giorni</button></a>
+                                    <span>
+                                    oppure <a href="#">acquista ora</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="empty-div"></div>
+                            <div class="check-type">
+                                <div class="plan-block">
+                                    <h5>
+                                        Punti Salienti del piano
+                                    </h5>
+                                    <ul>
+                                        <li>
+                                            Cartelle offline su dispositivi mobili
+                                        </li>
+                                        <li>
+                                            Servizio assistenza 24/h
+                                        </li>
+                                        <li>
+                                            Possibilità di personalizzazione totale
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="subscription-office flex column">

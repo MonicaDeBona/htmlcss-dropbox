@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&family=Roboto&display=swap');
 
 /* RESET */
 *{
@@ -10,6 +10,19 @@
 body{
     font-family: 'Open Sans', sans-serif;
     /* min/max-width */
+}
+
+h1{
+    font-size: 5rem;
+    padding-top: 4rem;
+}
+
+h2{
+    font-size: 2.5rem;
+}
+
+h3{
+    font-size: 1.5rem;
 }
 
 
@@ -60,6 +73,7 @@ body{
     background-color: aquamarine;
     margin: auto;
     width: 63rem;
+    padding-top: 10rem;
 }
 
 
@@ -89,11 +103,6 @@ header{
     background-color: #b4d0e6;
 }
 
-h1{
-    font-size: 5rem;
-    padding-top: 4rem;
-}
-
 .col{
     padding-top: 2.5rem;
 }
@@ -115,14 +124,9 @@ h1{
 
 /* ////////////-----Sezione con piani di abbonamento-----/////////////// */
 .subscription-title{
-    background-color: #807777;
-    border: 1px solid black;
+    margin-bottom: 2rem;
 }
 
-.subscription-price{
-    background-color: #807777;
-    border: 1px solid black;
-}
 
 .subscription-office{
     height: 10rem;
@@ -131,27 +135,29 @@ h1{
 }
 
 .plans{
-    background-color: rgb(110, 218, 110);
-    width: 15rem;
-    height: 50rem;
+    width: calc((100% / 3) - 2rem);
+    height: 850px;
+    border: .1px solid #474747;
 }
 
 .plan-forwho{
-    background-color: bisque;
-    height: 10%;
-    border: 1px solid black;
+    height: 5%;
+    border-bottom: .1px solid #474747;
 }
 
 .plan-type{
-    background-color: bisque;
-    height: 60%;
-    border: 1px solid black;
+    height: 54%;
+}
+
+.empty-div{
+    height: 1%;
+    border-top: .1px solid #474747;
+    margin-left: 1rem;
+    margin-right: 15rem;
 }
 
 .check-type{
-    background-color: bisque;
-    height: 30%;
-    border: 1px solid black;
+    height: 40%;
 }
 
 .enterprise{
@@ -273,10 +279,33 @@ footer{
 /* ////////////-----INSERIMENTO CONTENUTI-----/////////////// */
 
 
+
+/* ////////////-----BUTTONS&radioINPUT STYLE-----/////////////// */
+.blue{
+    background-color: #0566f9;
+}
+
+.button-style{
+    color: white;
+    border: none;
+    padding: .5rem 1.7rem;
+    font-size: 1.1rem;
+}
+
+.plan-button{
+    margin-bottom: 1rem;
+}
+
+
+
+
 /* ////////////-----sezione NAV CONTENUTI-----/////////////// */
+nav ul li{
+    padding: 1rem;
+}
+
 ul li{
     list-style: none;
-    padding: 1rem;
 }
 
 nav li a{
@@ -286,7 +315,9 @@ nav li a{
 
 
 /* ////////////-----sezione HEADER CONTENUTI-----/////////////// */
-
+.subscription-title h2{
+    padding-bottom: 2rem;
+}
 header button{
     margin: 2rem 0rem;
 }
@@ -303,8 +334,32 @@ header button{
 }
 
 
+/* ////////////-----sezione MAIN CONTENUTI  PIANI DI ABBONAMENTO-----/////////////// */
+.subscription p{
+    display: inline-block;
+    padding-right: 2.5rem;
+}
 
+.icons{
+    font-size: 1.2rem;
+    padding-right: .5rem;
+}
 
+.plan-type span{
+    display: block;
+}
+
+.plan-block{
+    padding-bottom: 3rem;
+    line-height: 1.8rem;
+    padding: 1rem 1.5rem;
+}
+
+main ul li:before {
+    content: '✓';
+    color: #0566f9;
+    font-weight: bold;
+}
 
 
 
@@ -355,13 +410,3 @@ header button{
 
 
 
-.blue{
-    background-color: #0566f9;
-}
-
-.button-style{
-    color: white;
-    border: none;
-    padding: .3rem .8rem;
-    font-size: 1.1rem;
-}
