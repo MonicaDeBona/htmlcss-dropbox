@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+/* body{
+    max/min-width
+} */
+
 
 
 
@@ -29,6 +33,10 @@
     flex-wrap: wrap;
 }
 
+.justify{
+    justify-content: center;
+}
+
 .major-container{
     background-color: #b4d0e6;
     width: 75rem;
@@ -45,20 +53,19 @@
 
 /* ////////////-----NAV-----/////////////// */
 nav{
-    background-color: rgb(47, 47, 197);
     height: 80px;
+    font-size: 1.2rem;
 }
 
-.left-list{
-    background-color: rgb(176, 112, 236);  
-    width: 550px;
-}
 
-.right-list{
-    background-color: #b070ec;
-    height: 40px;
-    width: 550px;
-}
+/* .left-list{  
+    è giusto togliere la width?
+} */
+
+/* .right-list{
+    è giusto togliere la width?
+} */
+
 
 
 
@@ -231,7 +238,6 @@ h1{
 /* ////////////-----DIV SOLITARIO A CUI BISOGNA TROVARE UN POSTO-----/////////////// */
 .business{
     background-color: greenyellow;
-    height: 10rem;
 }
 
 
@@ -254,20 +260,75 @@ footer{
 
 
 /* ////////////-----sezione NAV CONTENUTI-----/////////////// */
-a{
-    text-decoration: none;
-}
-
-
-
-li{
+ul li{
     list-style: none;
+    padding: 1rem;
 }
 
-.main-logo{
-    height: 1.5rem;
+nav li a{
+    text-decoration: none;
+    color: #474747;
 }
 
-.start{
-    background-color: rgb(8, 52, 133);
+.start-button{
+    color: white;
+    background-color: #0566f9;
+    border: none;
+    padding: .3rem .8rem;
 }
+
+
+/* ////////////-----sezione HEADER CONTENUTI-----/////////////// */
+
+
+
+
+
+
+
+
+/* ////////////-----COLORI STILI E DIMENISIONI QUADRATI-----/////////////// */
+
+
+
+.designit{
+    background-color: #a1d29f;
+}
+
+.asu{
+    background-color: #610a2a;
+}
+
+.uf{
+    background-color: #0094cb;
+}
+
+.topps{
+    background-color: #ff211b;
+}
+
+.big-designit{
+    background-color: #f5f5f5;
+}
+
+.bicycle{
+    background-color: #d6081e;
+}
+
+.hearst{
+    background-color: #b4d0e6;
+}
+
+.lonelyp{
+    background-color: #0e287e;
+}
+
+.clear-channel{
+    background-color: #ffd749;
+}
+
+.img-size{
+    width: 10rem;
+    
+}
+
