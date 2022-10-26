@@ -306,7 +306,15 @@ li{
 .partner{
     width: 40%;
     padding: 3rem 3rem;
+}
 
+.button-partner{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    margin-top: 2rem;
+    padding: .7rem .8rem;
+    font-size: 1rem;
 }
 
 
@@ -447,12 +455,7 @@ footer li{
     color: black;
 }
 
-.white-button{
-    background-color: white;
-    color: black;
-    border: 1px solid black;
-    margin-top: 2rem;
-}
+
 
 .plan-button{
     margin-bottom: 1rem;
