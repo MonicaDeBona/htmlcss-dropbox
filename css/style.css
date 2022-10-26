@@ -61,7 +61,6 @@ h3{
 }
 
 .major-container{
-    background-color: #b4d0e6;
     width: 75rem;
     margin: auto;
 }
@@ -69,7 +68,6 @@ h3{
 .medium-container{
     margin: auto;
     width: 63rem;
-    padding-top: 10rem;
 }
 
 
@@ -116,6 +114,10 @@ header{
 /* ////////////-----INIZIO MAIN-----/////////////// */
 
 /* ////////////-----Sezione con piani di abbonamento-----/////////////// */
+.subscription{
+    padding-top: 10rem;
+}
+
 .subscription-title{
     margin-bottom: 2rem;
 }
@@ -246,24 +248,67 @@ header{
 
 
 /* ////////////-----DIV SOLITARIO A CUI BISOGNA TROVARE UN POSTO-----/////////////// */
+.dropbox-business{
+    background-color:  #b4d0e6;
+}
+
 .business{
-    background-color: greenyellow;
+    padding: 6rem 6rem 3rem 0rem
+}
+
+.business-left{
+    flex-basis: 60%;
+}
+
+.business-right{
+    flex-basis: 40%;
 }
 
 
 /* ////////////-----Sezione DOMANDE FREQUENTI-----/////////////// */
 .asking-questions{
-    height: 10rem;
-    background-color: rgb(61, 150, 73);
+    padding: 6rem 0rem;
+}
+
+.asking-questions div{
+    padding: 2rem 0rem;
+}
+
+.medium-container h2{
+    padding-bottom: 2rem;
 }
 
 
 /* ////////////-----Sezione FOOTER-----/////////////// */
 footer{
-    background-color: rgb(75, 71, 71);
+    background-color: black;
+    color: white;
+    padding: 6rem 0rem;
 }
 
+footer h3{
+    padding-bottom: 2rem;
+}
 
+footer li{
+    padding-bottom: .8rem;
+}
+
+.empty-div-footer{
+    height: 1px;
+    border-top: .1px solid #474747;
+    margin: 4rem 68rem 2rem 0rem;
+    
+}
+
+.fa-sort-up{
+    top: 7px;
+    left: 7px;
+}
+
+.bottom-footer{
+    padding-top: 2rem;
+}
 
 
 /* ////////////-----INSERIMENTO CONTENUTI-----/////////////// */
@@ -282,6 +327,12 @@ footer{
     border: none;
     padding: .5rem 1.7rem;
     font-size: 1.1rem;
+}
+
+.business-button{
+    margin-top: 0.8rem;
+    background-color: white;
+    color: black;
 }
 
 .white-button{
@@ -395,6 +446,8 @@ main ul li:before {
 
 .big-designit{
     background-color: #f5f5f5;
+    padding: 3rem 3rem;
+
 }
 
 .bicycle{
@@ -415,8 +468,17 @@ main ul li:before {
 
 .img-size{
     width: 10rem;
-
 }
 
+
+.empty-div-block{
+    height: 1%;
+    border-top: .1px solid #474747;
+    margin: 2.5rem 28rem 2.5rem 0rem;
+}
+
+.big-designit p{
+    padding-bottom: 2rem;
+}
 
 
