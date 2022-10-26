@@ -22,16 +22,20 @@ h2{
 }
 
 h3{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 
 h5{
     font-size: 1.1rem;
 }
 
+button {
+    font-size: 1rem;
+}
 
 
-/* ////////////-----SELETTORI GENERICI-----/////////////// */
+
+/* ////////////-----SELETTORI-----/////////////// */
 .flex{
     display: flex;
 }
@@ -74,6 +78,29 @@ h5{
     margin: auto;
 }
 
+.blue{
+    background-color: #0566f9;
+}
+.button-bg{
+    background-color: white;
+}
+
+.button-style{
+    font-size: 1rem;
+}
+
+.button-clr{
+    color: white;
+}
+
+.button-bd{
+    border: none;
+}
+
+.button-clr-b{
+    color: black;
+}
+
 
 
 /* ////////////-----NAV-----/////////////// */
@@ -112,9 +139,9 @@ nav li a{
     font-size: 1rem;
 }
 
-nav button{
+.start-button{
     font-size: 1rem;
-    padding: .7rem 1.5rem;
+    padding: 0.5rem 1rem;
 }
 
 
@@ -144,7 +171,7 @@ header{
 
 header button{
     margin: 2rem 0rem;
-    font-size: 1rem;
+    padding: .8rem .9rem;
 }
 
 .down-arrow{
@@ -161,8 +188,12 @@ header button{
 
 
 
-/* ////////////-----INIZIO MAIN-----/////////////// */
 
+
+/* ////////////-----INIZIO MAIN-----/////////////// */
+main a:visited{
+    color: #0566f9;
+}
 
 /* SEZIONE CON ABBONAMENTI ////////////////////////////////////////////////////////////////*/
 .subscription {
@@ -236,18 +267,14 @@ li{
 }
 
 .button-plan{
-    background-color: rgb(0, 77, 192);
-    color: white;
-    border: none;
     padding: .8rem 1.9rem;
-    font-size: 1rem;
     margin-bottom: 1.5rem;
 }
 
 .empty-div{
     height: 1%;
     border-bottom: .1px solid gray;
-    margin: 1rem 14rem 0rem 0rem;
+    margin: 1rem 12rem 0rem 0rem;
     padding-top: 2rem;
 }
 
@@ -309,27 +336,29 @@ li{
 }
 
 .button-partner{
-    background-color: white;
-    color: black;
     border: 1px solid black;
     margin-top: 2rem;
     padding: .7rem .8rem;
-    font-size: 1rem;
+}
+
+.partner h3{
+    padding-bottom: 2rem;
 }
 
 
 
-/* ////////////-----Sezione con operazioni Dropbox Business-----/////////////// */
-.operations-container{
+
+/* SEZIONE DROPBOX BUSINESS CARDS */
+.business-card{
     width: 100%;
     padding-top: 10rem;
 }
 
 .cards-container{
-    padding-top: 3rem;
+    padding: 2.5rem 0rem 10rem;
 }
 
-.cards{
+.card{
     width: 18rem;
     margin-bottom: 3rem;
 }
@@ -338,7 +367,7 @@ li{
     width: 100%;
 }
 
-.cards h3{
+.card h3{
     padding-bottom: 1rem;
 }
 
@@ -357,13 +386,64 @@ li{
     background-color: rgb(114, 150, 182);
 }
 
-.numbers{
+.team-numbers{
     padding-bottom: 9rem;
 }
 
-.numbers p{
-    padding-top: 5rem;
+.blocks-img{
+    width: 50%;
+    filter: invert(1);
 }
+
+.empty-div-block{
+    height: 1%;
+    border-top: .1px solid #474747;
+    margin: 2.5rem 28rem 2.5rem 0rem;
+}
+
+
+.big-designit p{
+    padding-bottom: 2rem;
+}
+
+.designit{
+    background-color: #a1d29f;
+    border: 17px solid #d1e8cf;
+}
+
+.asu{
+    background-color: #610a2a;
+}
+
+.uf{
+    background-color: #0094cb;
+}
+
+.topps{
+    background-color: #ff211b;
+}
+
+.bicycle{
+    background-color: #d6081e;
+}
+
+.hearst{
+    background-color: #b4d0e6;
+}
+
+.lonelyp{
+    background-color: #0e287e;
+}
+
+.clear-channel{
+    background-color: #ffd749;
+}
+
+.big-designit{
+    background-color: #f5f5f5;
+    padding: 3rem 3rem;
+}
+
 
 
 
@@ -384,26 +464,21 @@ li{
     flex-basis: 40%;
 }
 
-
-/* ////////////-----Sezione DOMANDE FREQUENTI-----/////////////// */
-.asking-questions{
-    padding: 6rem 0rem;
+.button-business{
+    padding: 1rem 2rem;
+    margin-top: 0.8rem;
 }
 
-.asking-questions div{
-    padding: 2rem 0rem;
+/* ////////////-----Sezione FOOTER-----/////////////// */
+
+
+/* ////////////-----Sezione DOMANDE FREQUENTI-----/////////////// */
+footer{
+    padding: 6rem 0rem 0rem
 }
 
 .medium-container h2{
     padding-bottom: 4rem;
-}
-
-
-/* ////////////-----Sezione FOOTER-----/////////////// */
-footer{
-    background-color: black;
-    color: white;
-    padding: 6rem 0rem;
 }
 
 footer h3{
@@ -414,141 +489,42 @@ footer li{
     padding-bottom: .8rem;
 }
 
+.top-footer{
+    padding: 0rem 0rem 6rem;
+    background-color: white;
+}
+
+.top-footer div{
+    padding: 2rem 0rem;
+}
+
+.bottom-footer{
+    background-color: black;
+    color: white;
+    padding: 6rem 0rem;
+}
+
 .empty-div-footer{
     height: 1px;
     border-top: .1px solid #474747;
-    margin: 4rem 68rem 2rem 0rem;
+    margin: 4rem 70rem 2rem 0rem;
     
+}
+
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+/* ////////////-----Sezione lingua----/////////////// */
+.language{
+    padding-top: 2rem;
 }
 
 .fa-sort-up{
     top: 7px;
     left: 7px;
-}
-
-.bottom-footer{
-    padding-top: 2rem;
-}
-
-
-/* ////////////-----INSERIMENTO CONTENUTI-----/////////////// */
-
-
-
-/* ////////////-----BUTTONS&radioINPUT STYLE-----/////////////// */
-.blue{
-    background-color: #0566f9;
-}
-
-
-
-.button{
-    color: white;
-    border: none;
-    padding: 0.8rem 2.7rem;
-    font-size: 1rem;
-}
-
-.business-button{
-    margin-top: 0.8rem;
-    background-color: white;
-    color: black;
-}
-
-
-
-.plan-button{
-    margin-bottom: 1rem;
-}
-
-.enterprise-button{
-    margin: 1.6rem 1.5rem;
-}
-
-
-
-
-/* ////////////-----sezione NAV CONTENUTI-----/////////////// */
-
-
-
-/* ////////////-----sezione HEADER CONTENUTI-----/////////////// */
-
-
-/* ////////////-----sezione MAIN CONTENUTI  PIANI DI ABBONAMENTO-----/////////////// */
-.subscription p{
-    display: inline-block;
-    padding-right: 2.5rem;
-}
-
-.icons{
-    font-size: 1.2rem;
-    padding-right: .5rem;
-}
-
-
-
-/* ////////////-----PARTNER CONTAINER sezione-----/////////////// */
-.partner h3{
-    padding-bottom: 2rem;
-}
-
-/* ////////////-----COLORI STILI E DIMENISIONI QUADRATI-----/////////////// */
-
-
-
-.designit{
-    background-color: #a1d29f;
-}
-
-.asu{
-    background-color: #610a2a;
-}
-
-.uf{
-    background-color: #0094cb;
-}
-
-.topps{
-    background-color: #ff211b;
-}
-
-.big-designit{
-    background-color: #f5f5f5;
-    padding: 3rem 3rem;
-
-}
-
-.bicycle{
-    background-color: #d6081e;
-}
-
-.hearst{
-    background-color: #b4d0e6;
-}
-
-.lonelyp{
-    background-color: #0e287e;
-}
-
-.clear-channel{
-    background-color: #ffd749;
-}
-
-.blocks-img{
-    width: 50%;
-    filter: invert(1);
-}
-
-
-.empty-div-block{
-    height: 1%;
-    border-top: .1px solid #474747;
-    margin: 2.5rem 28rem 2.5rem 0rem;
-}
-
-.big-designit p{
-    padding-bottom: 2rem;
 }
 
 
