@@ -88,22 +88,29 @@
         <main>
             <div class="medium-container">
 
+
+
                 <!-- INIZIO SEZIONE CON PIANI DI ABBONAMENTO -->
-                <section class="subscription flex column">
+                <section class="subscription">
+                    <!-- TITOLOE E RADIO-BUTTON -->
                     <div class="subscription-title">
                         <h2>
                             Trova il piano business che fa per te
                         </h2>
-                        <p>
+                        <span class="radio-button">
                             <input type="radio" id="Fatturazione-mensile" name="fatturazione" checked="yes">Fatturazione mensile
-                        </p>
-                        <p>
+                        </span>
+                        <span>
                             <input type="radio" id="Fatturazione-annuale" name="fatturazione">Fatturazione annuale
-                        </p>
+                        </span>
                     </div>
-                    <div class="subscription-price flex space-between">
-                        <div class="plans flex column space-between">
-                            <div class="plan-forwho flex center justify">
+                    <!-- CONTENITORE DELLE 3 COLONNE CON PIANI DI ABBONAMENTO -->
+                    <div class="col-container flex space-between">
+                        <!-- SINGOLA COLONNA a sx -->
+                        <div class="col-plan flex column">
+                            <!-- 2 SEZIONI DI OGNI SINGOLA COLONNA  -->
+                            <!-- sezione in alto  -->
+                            <div class="top-section">
                                 <span>
                                     <i class="fa-solid fa-user icons"></i>
                                 </span>
@@ -111,9 +118,12 @@
                                     Singolo
                                 </span>
                             </div>
-                            <div class="plan-type">
-                                <div class="plan-block">
-                                    <h3>Professional</h3>
+                            <!-- sezione principale  -->
+                            <div class="main-section">
+                                <h3>
+                                    Professional
+                                </h3>
+                                <div class="little-container line">
                                     <div>
                                         <span>
                                             <strong>
@@ -122,12 +132,12 @@
                                         </span>
                                     </div>
                                     <div>
-                                        <span class="gray-text">
+                                        <span>
                                             /mese
                                         </span>
                                     </div>
                                 </div>
-                                <div class="plan-block">
+                                <div class="little-container">
                                     <div class="flex">
                                         <span>
                                             <i class="fa-solid fa-user icons"></i>
@@ -136,7 +146,7 @@
                                             1 utente
                                         </span>
                                     </div>
-                                    <div class="flex">
+                                    <div class="flex space">
                                         <span>
                                             <i class="fa-solid fa-folder icons"></i>
                                         </span>
@@ -144,41 +154,54 @@
                                             5 TB di spazio di archiviazione sicuro
                                         </span>
                                     </div>    
-                                    <div class="flex">
+                                    <div class="flex space">
                                         <span>
-                                            <i class="fa-solid fa-share-nodes icons"></i> 
+                                            <i class="fa-solid fa-share-nodes icons"></i>
                                         </span>
-                                        <span>
-                                            Funzioni di produttività premium e condivisione file semplice e sicura
+                                        <span>Funzioni di produttività premium e condivisione file semplice e sicura
                                         </span>
                                     </div>
                                 </div>
-                                <div class="plan-block">
-                                    <a href="#"><button class="blue button-style plan-button">Prova Gratis per 30 giorni</button></a>
+                                <div class="flex justify">
+                                    <a href="#">
+                                        <button class="button-plan">
+                                            Prova Gratis per 30 giorni
+                                        </button>
+                                    </a>
+                                </div>
+                                <div>
                                     <span>
-                                    oppure <a href="#">acquista ora</a>
+                                        oppure 
+                                    </span>
+                                    <span>
+                                        <a href="#">
+                                            acquista ora
+                                        </a>
                                     </span>
                                 </div>
-                            </div>
-                            <div class="empty-div"></div>
-                            <div class="check-type">
-                                <div class="plan-block">
-                                    <h5>
-                                        Punti Salienti del piano
-                                    </h5>
+                                <div class="empty-div">
+
+                                </div>
+                                <h5>
+                                    Punti Salienti del piano
+                                </h5>
+                                <div class="little-container">
                                     <ul>
-                                        <li>
+                                        <li class="space">
                                             Invia file fino a 100 GB con Dropbox transfert
                                         </li>
-                                        <li>
+                                        <li class="space">
                                             Cartelle offline su dispositivi mobili
                                         </li>
-                                    </ul>
+                                    </ul> 
                                 </div>
-                            </div>
+                            </div>   
                         </div>
-                        <div class="plans flex column">
-                            <div class="plan-forwho flex center justify">
+                        <!-- SINGOLA COLONNA centrale  -->
+                        <div class="col-plan flex column">
+                            <!-- 2 SEZIONI DI OGNI SINGOLA COLONNA  -->
+                            <!-- sezione in alto  -->
+                            <div class="top-section">
                                 <span>
                                     <i class="fa-solid fa-people-group icons"></i>
                                 </span>
@@ -186,9 +209,12 @@
                                     Team
                                 </span>
                             </div>
-                            <div class="plan-type">
-                                <div class="plan-block">
-                                    <h3>Advanced</h3>
+                            <!-- sezione principale  -->
+                            <div class="central-section">
+                                <h3>
+                                    Advanced
+                                </h3>
+                                <div class="little-container line">
                                     <div>
                                         <span>
                                             <strong>
@@ -197,82 +223,99 @@
                                         </span>
                                     </div>
                                     <div>
-                                        <span class="gray-text">
+                                        <span>
                                             /utente/mese
                                         </span>
                                     </div>
                                 </div>
-                                <div class="plan-block">
+                                <div class="little-container">
                                     <div class="flex">
                                         <span>
-                                            <i class="fa-solid fa-user icons"></i>
+                                            <i class="fa-solid fa-user icons"></i></i>
                                         </span>
                                         <span>
-                                            3 o più utenti
+                                            3 o più utente
                                         </span>
                                     </div>
-                                    <div class="flex">
+                                    <div class="flex space">
                                         <span>
                                             <i class="fa-solid fa-folder icons"></i>
                                         </span>
                                         <span>
                                             Tutto lo spazio di cui ha bisogno il tuo team
                                         </span>
-                                    </div>
-                                    <div class="flex">
+                                    </div>    
+                                    <div class="flex space">
                                         <span>
-                                            <i class="fa-solid fa-share-nodes icons"></i> 
+                                            <i class="fa-solid fa-share-nodes icons"></i>
                                         </span>
                                         <span>
                                             Sofisticate funzioni di controllo per tenere al sicuro tutti i file del tuo team
                                         </span>
                                     </div>
                                 </div>
-                                <div class="plan-block">
-                                    <a href="#"><button class="blue button-style plan-button">Prova Gratis per 30 giorni</button></a>
+                                <div class="flex justify">
+                                    <a href="#">
+                                        <button class="button-plan">
+                                            Prova Gratis per 30 giorni
+                                        </button>
+                                    </a>
+                                </div>
+                                <div>
                                     <span>
-                                    oppure <a href="#">acquista ora</a>
+                                        oppure 
+                                    </span>
+                                    <span>
+                                        <a href="#">
+                                            acquista ora
+                                        </a>
                                     </span>
                                 </div>
-                            </div>
-                            <div class="empty-div"></div>
-                            <div class="check-type">
-                                <div class="plan-block">
-                                    <h5>
-                                        Punti Salienti del piano
-                                    </h5>
+                                <div class="empty-div">
+
+                                </div>
+                                <h5>
+                                    Punti Salienti del piano
+                                </h5>
+                                <div class="little-container">
                                     <ul>
-                                        <li>
+                                        <li class="space">
                                             Nessun limite di spazio per i file
                                         </li>
-                                        <li>
+                                        <li class="space">
                                             Cartelle offline su dispositivi mobili
                                         </li>
-                                        <li>
+                                        <li class="space">
                                             Risparmio del 50% rispetto alle iscrizioni singole
                                         </li>
-                                        <li>
-                                            Possibilità di inserire nuovi membri del team
+                                        <li class="space">
+                                            Possibilità di inserire nuovi memebri del team
                                         </li>
-                                        <li>
+                                        <li class="space">
                                             Gestione dei permessi in base ai ruoli
                                         </li>
-                                    </ul>
+                                    </ul> 
                                 </div>
-                            </div>
+                            </div>   
                         </div>
-                        <div class="plans flex column">
-                            <div class="plan-forwho flex center justify">
+                        <!-- SINGOLA COLONNA a dx-->
+                        <div class="col-plan flex column">
+                            <!-- 2 SEZIONI DI OGNI SINGOLA COLONNA  -->
+                            <!-- sezione in alto  -->
+                            <div class="top-section">
                                 <span>
-                                    <i class="fa-solid fa-building icons"></i>
-                                </span>
+                                <i class="fa-solid fa-building icons"></i>
+                            </span>
                                 <span>
                                     Azienda
                                 </span>
                             </div>
-                            <div class="plan-type">
-                                <div class="plan-block">
-                                    <h3>Enterprise</h3>
+                            <!-- sezione principale  -->
+                            <div class="central-section">
+                                <h3>
+                                    Enterprise
+                                </h3>
+                                <div class="little-container line">
                                     <div>
                                         <span>
                                             <strong>
@@ -281,12 +324,12 @@
                                         </span>
                                     </div>
                                     <div>
-                                        <span class="gray-text">
+                                        <span>
                                             -
                                         </span>
                                     </div>
                                 </div>
-                                <div class="plan-block">
+                                <div class="little-container">
                                     <div class="flex">
                                         <span>
                                             <i class="fa-solid fa-user icons"></i>
@@ -295,59 +338,69 @@
                                             10 o più utenti
                                         </span>
                                     </div>
-                                    <div class="flex">
+                                    <div class="flex space">
                                         <span>
                                             <i class="fa-solid fa-folder icons"></i>
                                         </span>
                                         <span>
                                             Soluzioni personalizzabili per la tua azienda
                                         </span>
-                                    </div>
-                                    <div class="flex">
+                                    </div>    
+                                    <div class="flex space">
                                         <span>
-                                            <i class="fa-solid fa-share-nodes icons"></i> 
+                                            <i class="fa-solid fa-share-nodes icons"></i>
                                         </span>
                                         <span>
                                             Assistenza personalizzata per aiutare gli amministratori in una gestione su larga scala
                                         </span>
                                     </div>
                                 </div>
-                                <div class="plan-block">
-                                    <a href="#"><button class="blue button-style plan-button">Prova Gratis per 30 giorni</button></a>
+                                <div class="flex justify">
+                                    <a href="#">
+                                        <button class="button-plan">
+                                            Prova Gratis per 30 giorni
+                                        </button>
+                                    </a>
+                                </div>
+                                <div>
                                     <span>
-                                    oppure <a href="#">acquista ora</a>
+                                        oppure
+                                    </span>
+                                    <span>
+                                        <a href="#">acquista ora</a>
                                     </span>
                                 </div>
-                            </div>
-                            <div class="empty-div"></div>
-                            <div class="check-type">
-                                <div class="plan-block">
-                                    <h5>
-                                        Punti Salienti del piano
-                                    </h5>
+                                <div class="empty-div">
+
+                                </div>
+                                <h5>
+                                    Punti Salienti del piano
+                                </h5>
+                                <div class="little-container">
                                     <ul>
-                                        <li>
+                                        <li class="space">
+                                            Invia file fino a 100 GB con Dropbox transfert
+                                        </li>
+                                        <li class="space">
                                             Cartelle offline su dispositivi mobili
                                         </li>
-                                        <li>
-                                            Servizio assistenza 24/h
-                                        </li>
-                                        <li>
-                                            Possibilità di personalizzazione totale
-                                        </li>
-                                    </ul>
+                                    </ul> 
                                 </div>
-                            </div>
+                            </div>   
                         </div>
                     </div>
+    
                     <div class="subscription-office flex column">
-                        <div class="team flex center justify">
-                            <p>
-                                <i class="fa-solid fa-people-group icons"></i>Team
-                            </p>
+                        <div class="top-section">
+                            <span>
+                                <i class="fa-solid fa-people-group icons"></i>
+                            </span>
+                            <span>
+                                Team
+                            </span>
                         </div>
                         <div class="enterprise flex">
-                            <div class="team-left plan-block">
+                            <div class="team-left">
                                 <h3>
                                     Enterprise
                                 </h3>
@@ -359,12 +412,13 @@
                                 </span>
                             </div>
                             <div class="team-right">
-                                <a href="#"><button class="blue button-style enterprise-button">Contatta l'ufficio vendite</button></a>
+                                <a href="#"><button class="button-plan">Contatta l'ufficio vendite</button></a>
                             </div>
                         </div>
                     </div>
                 </section>
                 <!-- FINE SEZIONE CON PIANI DI ABBONAMENTO -->
+                
 
                 <!-- INIZIO SEZIONE CON PARTNER DROPBOX -->
                 <section class="partner-container">
