@@ -76,10 +76,18 @@ h3{
 
 /* ////////////-----NAV-----/////////////// */
 nav{
-    height: 80px;
-    font-size: 1.2rem;
+    height: 120px;
+    font-size: 1.2rem; 
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
+.main-logo{
+    vertical-align: middle;
+    width: 180px;    /* è giusto dare la width in px? */
+}
 
 /* .left-list{
     è giusto togliere la width?
@@ -89,12 +97,32 @@ nav{
     è giusto togliere la width?
 } */
 
+nav ul li{
+    padding: 1.5rem;
+}
+
+ul li{
+    list-style: none;
+}
+
+nav li a{
+    text-decoration: none;
+    color: #474747;
+    font-size: 1.4rem;
+}
+
+nav button{
+    font-size: 1.4rem;
+    padding: .7rem 1.5rem;
+}
+
 
 
 
 /* ////////////-----HEADER-----/////////////// */
 header{
     background-color: #b4d0e6;
+    padding-top: 120px;
 }
 
 .col{
@@ -325,8 +353,6 @@ footer li{
 .button-style{
     color: white;
     border: none;
-    padding: .5rem 1.7rem;
-    font-size: 1.1rem;
 }
 
 .business-button{
@@ -354,18 +380,7 @@ footer li{
 
 
 /* ////////////-----sezione NAV CONTENUTI-----/////////////// */
-nav ul li{
-    padding: 1rem;
-}
 
-ul li{
-    list-style: none;
-}
-
-nav li a{
-    text-decoration: none;
-    color: #474747;
-}
 
 
 /* ////////////-----sezione HEADER CONTENUTI-----/////////////// */
@@ -466,8 +481,9 @@ main ul li:before {
     background-color: #ffd749;
 }
 
-.img-size{
-    width: 10rem;
+.blocks-img{
+    width: 50%;
+    filter: invert(1);
 }
 
 
