@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
 /* RESET */
 *{
@@ -10,11 +10,13 @@
 body{
     font-family: 'Open Sans', sans-serif;
     min-width: 1140px;
+    font-weight: 300;
 }
 
 h1{
-    font-size: 5rem;
-    padding-top: 4rem;
+    font-size: 4.8rem;
+    padding-top: 5rem;
+    font-weight: 800;
 }
 
 h2{
@@ -26,13 +28,8 @@ h3{
 }
 
 h5{
-    font-size: 1.1rem;
+    font-size: .9rem;
 }
-
-button {
-    font-size: 1rem;
-}
-
 
 
 /* ////////////-----SELETTORI-----/////////////// */
@@ -69,24 +66,27 @@ button {
 }
 
 .major-container{
-    width: 65%;
+    width: 63%;
     margin: auto;
 }
 
 .medium-container{
-    width: 55%;
+    width: 50%;
     margin: auto;
+}
+
+button{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
 }
 
 .blue{
     background-color: #0566f9;
 }
+
 .button-bg{
     background-color: white;
-}
-
-.button-style{
-    font-size: 1rem;
 }
 
 .button-clr{
@@ -102,7 +102,6 @@ button {
 }
 
 
-
 /* ////////////-----NAV-----/////////////// */
 nav{
     height: 80px;
@@ -114,16 +113,8 @@ nav{
 }
 
 .main-logo{
-    vertical-align: middle;
+    vertical-align: text-bottom;
 }
-
-/* .left-list{
-    è giusto togliere la width?
-} */
-
-/* .right-list{
-    è giusto togliere la width?
-} */
 
 nav ul li{
     padding: 1.2rem;
@@ -140,11 +131,8 @@ nav li a{
 }
 
 .start-button{
-    font-size: 1rem;
     padding: 0.5rem 1rem;
 }
-
-
 
 
 /* ////////////-----HEADER-----/////////////// */
@@ -154,7 +142,7 @@ header{
 }
 
 .jumbotron-content{
-    padding-top: 2.5rem;
+    padding-top: 3rem;
 }
 
 .jumbotron-info{
@@ -176,7 +164,7 @@ header button{
 
 .down-arrow{
     font-size: 3rem;
-    margin: 6rem 0rem 1rem;
+    margin: 4.5rem 0rem 1rem;
 }
 
 .jumbo-img{
@@ -186,11 +174,7 @@ header button{
 }
 
 
-
-
-
-
-/* ////////////-----INIZIO MAIN-----/////////////// */
+/* ////////////-----MAIN-----/////////////// */
 main a:visited{
     color: #0566f9;
 }
@@ -202,34 +186,83 @@ main a:visited{
 
 /* SEZIONE CON TITOLO E RADIOBOX */
 .subscription-title h2{
-    font-size: 2.5rem;
     padding-bottom: 3rem;
 }
 
-.radio-button{
-    padding-right: 3rem;
+.container {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    user-select: none;
 }
 
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+    background-color: #0566f9;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+}
+
+.billing{
+    padding-right: 3rem;
+}
 
 /* SEZIONE CON ABBONAMENTI A COLONNE */
 .col-container{
     padding-top: 3rem;
 }
 .col-plan{
-    width: calc((100% / 3) - 2.5rem);
+    width: calc((100% / 3) - 2rem);
     border: 1px solid gray;
 }
 
 .top-section{
-    flex-basis: 5%;
+    flex-basis: 3.5%;
     text-align: center;
-    padding: 1rem 0rem;
+    padding: .5rem 0rem;
     border-bottom: 1px solid gray;
 }
 
 .main-section{
-    flex-basis: 95%;
-    padding: 2rem;
+    flex-basis: 96.5%;
+    padding: 1.5rem;
 }
 
 .little-container{
@@ -267,8 +300,9 @@ li{
 }
 
 .button-plan{
-    padding: .8rem 1.9rem;
+    padding: .7rem 1.9rem;
     margin-bottom: 1.5rem;
+    font-size: .9rem;
 }
 
 .empty-div{
@@ -279,7 +313,11 @@ li{
 }
 
 .main-section h5{
-    padding: 3rem 0rem 1rem;
+    padding: 3rem 0rem 0rem;
+}
+
+.main-section {
+    font-size: .9rem;
 }
 
 /* SEZIONE CON ABBONAMENTI PERSONALIZZATO ENTERPRISE */
@@ -315,7 +353,6 @@ li{
 }
 
 
-
 /* SEZIONE PARTNER DROPBOX */
 .partner-container{
     padding-top: 10rem;
@@ -346,8 +383,6 @@ li{
 }
 
 
-
-
 /* SEZIONE DROPBOX BUSINESS CARDS */
 .business-card{
     width: 100%;
@@ -372,7 +407,6 @@ li{
 }
 
 
-
 /* ////////////-----Sezione BLOCCHI-----/////////////// */
 .blocks{
     background-color: green;
@@ -384,6 +418,7 @@ li{
     width: 50%;
     aspect-ratio: 1 / 1;
     background-color: rgb(114, 150, 182);
+    
 }
 
 .team-numbers{
@@ -392,6 +427,10 @@ li{
 
 .blocks-img{
     width: 50%;
+    
+}
+
+.invert{
     filter: invert(1);
 }
 
@@ -400,7 +439,6 @@ li{
     border-top: .1px solid #474747;
     margin: 2.5rem 28rem 2.5rem 0rem;
 }
-
 
 .big-designit p{
     padding-bottom: 2rem;
@@ -445,8 +483,6 @@ li{
 }
 
 
-
-
 /* ////////////-----DIV SOLITARIO A CUI BISOGNA TROVARE UN POSTO-----/////////////// */
 .dropbox-business{
     background-color:  #b4d0e6;
@@ -469,9 +505,8 @@ li{
     margin-top: 0.8rem;
 }
 
+
 /* ////////////-----Sezione FOOTER-----/////////////// */
-
-
 /* ////////////-----Sezione DOMANDE FREQUENTI-----/////////////// */
 footer{
     padding: 6rem 0rem 0rem
@@ -511,7 +546,6 @@ footer li{
     
 }
 
-
 footer a{
     text-decoration: none;
     color: white;
@@ -526,5 +560,3 @@ footer a{
     top: 7px;
     left: 7px;
 }
-
-
